@@ -1,7 +1,9 @@
+import { Pagination } from "app/components";
+
 const ListingView = () => {
   return (
     <>
-      <h2>HomeView</h2>
+      <Pagination />
     </>
   );
 };

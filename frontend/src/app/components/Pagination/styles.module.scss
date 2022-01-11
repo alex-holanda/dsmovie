@@ -1,0 +1,54 @@
+.dsmoviePaginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dsmoviePaginationBox {
+  width: 11.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin: 0;
+
+    font-size: 0.75rem;
+    color: var(--color-primary);
+  }
+}
+
+.dsmoviePaginationButton {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 0.25rem;
+
+  background-color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #c2c2c2;
+
+  cursor: pointer;
+
+  svg {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(19%) saturate(7395%) hue-rotate(234deg) brightness(89%) contrast(92%);
+  }
+
+  &:disabled {
+    border: 1px solid #c2c2c2;
+    cursor: unset;
+
+    svg {
+      filter: none;
+    }
+  }
+}
+
+.dsmovieFlipHorizontal {
+  transform: rotate(180deg);
+}

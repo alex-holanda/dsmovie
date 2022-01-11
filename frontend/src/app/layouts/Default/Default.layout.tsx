@@ -8,7 +8,10 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <>
       <Navbar />
-      <main style={{ paddingTop: "3.75rem" }} className="container">
+      <main
+        style={{ paddingTop: "3.75rem", marginTop: "2.5rem" }}
+        className="container"
+      >
         {children}
       </main>
     </>
