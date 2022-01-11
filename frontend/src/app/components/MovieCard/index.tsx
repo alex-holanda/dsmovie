@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { MovieScore } from "app/components";
 
 import styles from "./styles.module.scss";
@@ -23,7 +25,9 @@ const MovieCard = () => {
       <div className={styles.dsmovieCardBottomContainer}>
         <h3>{movie.title}</h3>
         <MovieScore />
-        <div className={`btn btn-primary ${styles.dsmovieBtn}`}>Avaliar</div>
+        <Link to={`/form/${movie.id}`}>
+          <div className={`btn btn-primary ${styles.dsmovieBtn}`}>Avaliar</div>
+        </Link>
       </div>
     </div>
   );

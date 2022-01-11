@@ -1,4 +1,6 @@
-import styles from '../styles/Form.module.scss';
+import { Link } from "react-router-dom";
+
+import styles from "../styles/Form.module.scss";
 
 const FormView = () => {
   const movie = {
@@ -12,7 +14,7 @@ const FormView = () => {
 
   return (
     <>
-      <div className={styles.dsmovieFormContainer}>
+      <div className={`${styles.dsmovieFormContainer} mb-5`}>
         <img
           src={movie.image}
           alt={movie.title}
@@ -39,13 +41,19 @@ const FormView = () => {
             </div>
 
             <div className={styles.dsmovieFormBtnContainer}>
-              <button type="submit" className={`btn btn-primary ${styles.dsmovieBtn}`}>
+              <button
+                type="submit"
+                className={`btn btn-primary ${styles.dsmovieBtn}`}
+              >
                 Salvar
               </button>
             </div>
           </form>
-
-          <button className={`btn btn-primary mt-3 ${styles.dsmovieBtn}`}>Cancelar</button>
+          <Link to={`/`}>
+            <button className={`btn btn-primary mt-3 ${styles.dsmovieBtn}`}>
+              Cancelar
+            </button>
+          </Link>
         </div>
       </div>
     </>
