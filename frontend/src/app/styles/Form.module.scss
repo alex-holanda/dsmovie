@@ -1,0 +1,62 @@
+.dsmovieFormContainer {
+  max-width: 30rem;
+  margin: 2.5rem auto;
+}
+
+.dsmovieMovieCardImage {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.dsmovieCardBottomContainer {
+  background-color: #fff;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0.625rem 0.625rem 1.25rem 0.625rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+
+  h3 {
+    color: #4a4a4a;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    min-height: 2.5rem;
+  }
+}
+
+.dsmovieForm {
+  width: calc(100% - 1.25rem);
+}
+
+.dsmovieFormGroup {
+  margin-bottom: 1.25rem;
+
+  label {
+    font-size: 0.75rem;
+
+    color: #aaa;
+  }
+}
+
+.dsmovieFormBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.dsmovieBtn {
+  background-color: var(--color-primary);
+
+  font-size: 0.875rem;
+  font-weight: 700;
+
+  height: 2.5rem;
+  width: 11.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
