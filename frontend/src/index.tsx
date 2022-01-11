@@ -1,14 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { HomeView } from "./app/views";
+import { BrowserRouter } from "react-router-dom";
+
+import { DefaultLayout } from "app/layouts/Default";
+
+import { AppRoutes } from "app";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomeView />
+    <BrowserRouter>
+      <DefaultLayout>
+        <AppRoutes />
+      </DefaultLayout>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
